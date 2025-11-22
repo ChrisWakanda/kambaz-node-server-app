@@ -21,7 +21,7 @@
 
 import { v4 as uuidv4 } from "uuid";
 import model from "./model.js";
-export default function UsersDao(db) {
+export default function UsersDao() {
 
   const createUser = (user) => {
     const newUser = { ...user, _id: uuidv4() };
